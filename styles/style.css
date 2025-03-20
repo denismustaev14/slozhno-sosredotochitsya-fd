@@ -279,7 +279,10 @@
     margin-block-start: 62px;
     align-self: end;
   }
-  
+  .header-title {
+    margin-inline-start: 0px;
+    margin-block-start: 65px;
+  }
   .header-text {
     max-inline-size: 100%;
     margin-block-start: 46px;
