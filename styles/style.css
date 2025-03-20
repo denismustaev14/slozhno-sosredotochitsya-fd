@@ -8,6 +8,7 @@
   max-width: var(--max-width);
   height: 100vh;
   margin: auto;
+  margin-block-end: 40px;
 }
 .decorated-zone {
   position: relative;
@@ -123,12 +124,20 @@
   font-size: var(--main-text-size);
   line-height: 23.4px;
   letter-spacing: 0%;
+  margin-block-end: 10px;
+}
+.container-card-title{
+  font-weight: 700;
+  font-size: var(--main-text-size);
+  line-height: 23.4px;
+  letter-spacing: 0%;
 }
 .card-subtible {
   font-weight: 400;
   font-size: var(--main-text-size);
   line-height: 23.4px;
   letter-spacing: 0%;
+  margin-block-end: 10px;
 }
 .card-text {
   color: var(--text-color);
