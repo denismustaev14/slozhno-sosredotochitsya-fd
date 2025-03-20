@@ -7,9 +7,10 @@
   --text-color: var(--theme-color);
 }
 @media (375px <= width < 768px) {
-  :root{
+  :root {
     --screen-padding: 10px;
-  }}
+  }
+}
 .theme-light .page {
   background-image: var(--main-bg-image);
 }

@@ -11,6 +11,7 @@
   --elements-color: var(--accent-color);
 }
 @media (375px <= width < 768px) {
-  :root{
+  :root {
     --screen-padding: 10px;
-  }}
+  }
+}

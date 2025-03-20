@@ -9,9 +9,10 @@
   --main-bg-image: url("../images/cover-image-dark.png");
 }
 @media (375px <= width < 768px) {
-  :root{
+  :root {
     --screen-padding: 10px;
-  }}
+  }
+}
 .theme-dark .page {
   font-family: var(--main-font);
   background-image: var(--main-bg-image);
