@@ -165,6 +165,7 @@
   grid-template-columns: 1fr 2fr;
 }
 .section-title-row {
+  width: 95%;
 }
 .content-itemn_column {
   display: grid;
@@ -234,6 +235,7 @@
   max-width: var(--max-width);
   height: 100vh;
   margin: auto;
+  margin-block-start: 40px;
 }
 .footer-title {
   text-shadow: 2px 2px 0 var(--accent-color);
