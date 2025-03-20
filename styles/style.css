@@ -257,7 +257,31 @@
   .header-text {
     margin-block-start: 162px;
   }
- 
+  .header-title {
+    margin-block-start: 173px;
+  }
+  .section-title {
+    width: 97%;
+  }
+
+  .container-row {
+    grid-template: auto auto auto / 100%;
+  }
+  .footer {
+    margin-block-start: 30px;
+  }
+}
+@media (375px <= width < 768px) {
+  .header__theme-menu-list {
+    gap: 10px;
+  }
+  .header__theme-menu {
+    margin-block-start: 62px;
+    align-self: end;
+  }
+  .header-title {
+    margin-inline-start: 0px;
+    margin-block-start: 65px;
   }
   .header-text {
     max-inline-size: 100%;
