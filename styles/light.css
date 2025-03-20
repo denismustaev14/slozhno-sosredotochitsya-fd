@@ -5,12 +5,17 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-bg-image: url("../images/cover-image-light.png");
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --theme-color: #353430;
+  --elements-color: var(--theme-color);
+  --text-color: var(--theme-color);
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-image: var(--main-bg-image);
+}
+.theme-light .page .header-decor {
+  display: none;
 }

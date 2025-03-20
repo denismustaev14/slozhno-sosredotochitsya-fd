@@ -1,5 +1,290 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--screen-padding);
+  width: 100%;
+  min-height: 668px;
+  max-width: var(--max-width);
+  height: 100vh;
+  margin: auto;
+}
+.decorated-zone {
+  position: relative;
+}
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  border-top: 1px solid var(--elements-color);
+  border-right: 1px solid var(--elements-color);
+}
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 24px;
+  height: 24px;
+  border-bottom: 1px solid var(--elements-color);
+  border-left: 1px solid var(--elements-color);
+}
+.header__theme-menu-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: var(--main-text-size);
+  color: var(--elements-color);
+}
+.header__theme-menu-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-transform: lowercase;
+  padding: 1.5px 12px;
+}
+.header__theme-menu-button:focus {
+  outline: none;
+}
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--elements-color);
+}
+.header__theme-menu-button:hover {
+  border: 1px solid var(--elements-color);
+}
+.header__theme-menu-button_active {
+  border: 1px solid var(--elements-color);
+  pointer-events: none;
+}
+.header-decor {
+  display: flex;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: var(--main-text-size);
+  color: var(--accent-color);
+  right: var(--screen-padding);
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+}
+.header-decor::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 8px 9px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+.title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 83%;
+}
+.header-title {
+  align-self: flex-start;
+  margin-block-start: 273px;
+  margin-inline-start: -20px;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+.header-text {
+  display: flex;
+  align-self: flex-end;
+  margin-block-start: 114px;
+  font-size: var(--main-text-size);
+  font-weight: 700;
+  line-height: 23.4px;
+  max-inline-size: 50%;
+}
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--theme-color);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: var(--screen-padding);
+}
+.section-title {
+  color: var(--elements-color);
+  font-weight: 700;
+  font-size: var(--main-text-size);
+  line-height: 23.4px;
+}
+.card-title {
+  font-weight: 700;
+  font-size: var(--main-text-size);
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+.card-subtible {
+  font-weight: 400;
+  font-size: var(--main-text-size);
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+.card-text {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: var(--main-text-size);
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+.text-link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+.text-link:hover {
+  text-decoration: underline;
+}
+.text-link:focus {
+  outline: none;
+}
+.text-link:focus-visible {
+  border: 1px solid var(--text-color);
+}
+.section-title-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.content-itemn_column {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+.container-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content-itemn_row {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.container-row {
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  gap: 20px;
+}
+.picture-title {
+  margin-bottom: var(--screen-padding);
+  font-weight: 700;
+  font-size: var(--main-text-size);
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+.picture-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "img_sanset img_sanset img_ice-cream"
+    "img_tape img_book img_ice-cream"
+    "img_tape img_street img_street";
+  gap: var(--screen-padding);
+}
+.picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img_book {
+  grid-area: img_book;
+}
+.img_sanset {
+  grid-area: img_sanset;
+}
+.img_ice-cream {
+  grid-area: img_ice-cream;
+}
+.img_tape {
+  grid-area: img_tape;
+}
+.img_street {
+  grid-area: img_street;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--screen-padding);
+  width: 100%;
+  min-height: 668px;
+  max-width: var(--max-width);
+  height: 100vh;
+  margin: auto;
+}
+.footer-title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+@media (width < 1024px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+}
+@media (768px <= width < 1024px) {
+  .header__theme-menu {
+    margin-block-start: 146px;
+    align-self: end;
+  }
+  .header-title {
+    margin-block-start: 173px;
+  }
+  .container-row {
+    grid-template: 1fr 1fr 1fr / auto;
+    gap: 20px;
+  }
+}
+@media (375px <= width < 768px) {
+  .header__theme-menu-list {
+    gap: 10px;
+  }
+  .header__theme-menu {
+    margin-block-start: 75px;
+    align-self: end;
+  }
+  .header-title {
+    margin-block-start: 65px;
+  }
+  .header-text {
+    max-inline-size: 100%;
+    margin-block-start: 55px;
+  }
+  .content-itemn_column {
+    grid-template-columns: auto;
+  }
+  .content-itemn_row {
+    grid-template-columns: auto;
+  }
+  .section-title-row {
+    grid-template-columns: auto;
+  }
+  .container-row {
+    grid-template-columns: auto;
+  }
+  .picture-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "img_sanset"
+      "img_ice-cream"
+      "img_tape"
+      "img_book"
+      "img_street";
+  }
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font);
+  background-image: var(--main-bg-image);
+  background-attachment: fixed;
 }

@@ -5,12 +5,16 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-font: "IBM Plex Mono", sans-serif;
+  --screen-padding: 20px;
+  --main-text-size: 18px;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --theme-color: #000028;
+  --max-width: 1024px;
+  --text-color: #f1b2ce;
+  --main-bg-image: url("../images/cover-image-dark.png");
 }
 
 .theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
 }
