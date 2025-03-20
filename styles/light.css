@@ -6,6 +6,16 @@
   --elements-color: var(--theme-color);
   --text-color: var(--theme-color);
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-bg-image: url("../images/cover-image-light.png");
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --theme-color: #353430;
+    --elements-color: var(--theme-color);
+    --text-color: var(--theme-color);
+  }
+}
 @media (375px <= width < 768px) {
   :root {
     --screen-padding: 10px;
