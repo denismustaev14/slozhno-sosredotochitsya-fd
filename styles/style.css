@@ -317,6 +317,7 @@
 
 .page {
   font-family: var(--main-font);
-  background-image: var(--main-bg-image);
   background-attachment: fixed;
+  background: bottom / cover no-repeat var(--main-bg-image);
+  background-color: var(--bg-color);
 }
