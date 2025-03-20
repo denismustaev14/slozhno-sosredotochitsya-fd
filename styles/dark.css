@@ -1,6 +1,5 @@
 :root.theme-dark {
   --main-font: "IBM Plex Mono", sans-serif;
-  --screen-padding: 20px;
   --main-text-size: 18px;
   --accent-color: #ff0070;
   --title-color: #db00ff;
@@ -9,7 +8,10 @@
   --text-color: #f1b2ce;
   --main-bg-image: url("../images/cover-image-dark.png");
 }
-
+@media (375px <= width < 768px) {
+  :root{
+    --screen-padding: 10px;
+  }}
 .theme-dark .page {
   font-family: var(--main-font);
   background-image: var(--main-bg-image);

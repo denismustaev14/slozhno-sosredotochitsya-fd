@@ -10,3 +10,7 @@
   --main-bg-image: url("../images/cover-image-dark.png");
   --elements-color: var(--accent-color);
 }
+@media (375px <= width < 768px) {
+  :root{
+    --screen-padding: 10px;
+  }}
