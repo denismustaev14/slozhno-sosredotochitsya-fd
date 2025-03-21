@@ -14,7 +14,5 @@
   }
 }
 .theme-dark .page {
-  font-family: var(--main-font);
-  background-image: var(--main-bg-image);
   background-attachment: fixed;
 }

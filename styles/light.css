@@ -2,7 +2,7 @@
   --main-bg-image: url("../images/cover-image-light.png");
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
-  --theme-color: #353430;
+  --theme-color: rgba(53,52,48);
   --elements-color: var(--theme-color);
   --text-color: var(--theme-color);
   --bg-color: #fff1f7;
@@ -17,6 +17,9 @@
     --text-color: var(--theme-color);
     --bg-color: #fff1f7;
   }
+  .header-decor{
+    display: none;
+  }
 }
 @media (375px <= width < 768px) {
   :root {
@@ -24,7 +27,7 @@
   }
 }
 .theme-light .page {
-  background-image: var(--main-bg-image);
+ 
 }
 .theme-light .page .header-decor {
   display: none;
