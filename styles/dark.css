@@ -7,6 +7,7 @@
   --max-width: 1024px;
   --text-color: #f1b2ce;
   --main-bg-image: url("../images/cover-image-dark.png");
+  --hover-color: rgba(225, 0, 112, 0.4);
 }
 @media (375px <= width < 768px) {
   :root {

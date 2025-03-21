@@ -10,6 +10,7 @@
   --main-bg-image: url("../images/cover-image-dark.png");
   --elements-color: var(--accent-color);
   --bg-color: var(--theme-color);
+  --hover-color: rgba(225, 0, 112, 0.4);
 }
 @media (375px <= width < 768px) {
   :root {
