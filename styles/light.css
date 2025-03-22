@@ -28,8 +28,6 @@
     --screen-padding: 10px;
   }
 }
-.theme-light .page {
-}
 .theme-light .page .header-decor {
   display: none;
 }
