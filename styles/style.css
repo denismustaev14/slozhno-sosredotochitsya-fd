@@ -164,7 +164,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-.section-title-horizontal {
+.section-title-advices {
   width: 95%;
 }
 .content-itemn_causes {
@@ -177,13 +177,13 @@
   flex-direction: column;
   gap: 20px;
 }
-.content-itemn_horizontal {
+.content-itemn_advices {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 20px;
 }
 
-.container-horizontal {
+.container-advices {
   display: grid;
   grid-template: auto / 1fr 1fr 1fr;
   gap: 20px;
@@ -300,16 +300,16 @@
   .content-itemn_causes {
     grid-template-columns: auto;
   }
-  .content-itemn_horizontal {
+  .content-itemn_advices {
     grid-template-columns: auto;
   }
-  .section-title-horizontal {
+  .section-title-advices {
     grid-template-columns: auto;
   }
   .section-title-wrap {
     grid-template-columns: 1fr;
   }
-  .container-horizontal {
+  .container-advices {
     grid-template-columns: auto;
   }
   .picture-container {
