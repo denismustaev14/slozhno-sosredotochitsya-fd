@@ -251,7 +251,7 @@
 }
 @media (768px <= width < 1024px) {
   .header__theme-menu {
-    margin-block-start: 60px;
+    margin-block-start: 170px;
     align-self: end;
   }
   .header-text {
@@ -264,11 +264,11 @@
     width: 97%;
   }
 
-  .container-horizontal {
+  .container-advices {
     grid-template: auto auto auto / 100%;
   }
   .footer {
-    margin-block-start: 30px;
+    margin-block-start: 40px;
   }
 }
 @media (375px <= width < 768px) {
