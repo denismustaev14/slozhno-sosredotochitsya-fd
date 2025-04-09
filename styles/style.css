@@ -95,8 +95,6 @@
 }
 .header-text {
   display: flex;
-  align-self: flex-end;
-
   font-size: var(--main-text-size);
   font-weight: 700;
   line-height: 23.4px;
